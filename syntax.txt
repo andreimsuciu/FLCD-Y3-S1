@@ -34,7 +34,7 @@ factor ::= "(" expression ")" | IDENTIFIER
 
 iostmt ::= "SOMA" "(" IDENTIFIER ")" | "ANDIKA" "(" IDENTIFIER ")"
 
-structstmt ::= cmpdstmt | ifstmt | forstmt
+structstmt ::= ifstmt | forstmt
 
 ifstmt ::= "KAMA(" condition ")" stmt ["ZAIDI" stmt] "MKAMA"
 
