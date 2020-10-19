@@ -32,7 +32,7 @@ term ::= term "*" factor | factor
 
 factor ::= "(" expression ")" | IDENTIFIER
 
-iostmt ::= "SOMA" | "ANDIKA" "(" IDENTIFIER ")"
+iostmt ::= "SOMA" "(" IDENTIFIER ")" | "ANDIKA" "(" IDENTIFIER ")"
 
 structstmt ::= cmpdstmt | ifstmt | forstmt
 

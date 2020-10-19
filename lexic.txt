@@ -12,13 +12,13 @@ Lexic:
 
       a.Special symbols, representing:
 
-- operators :) :( * / >> - -> > + +>
+- operators :) :( * / >> - -> > + +> < ||
 
-- separators [ ] { }  : ; space
+- separators [ ] { } ; space
 
 - reserved words:
 
-    Orodha Nambari Mbili kwa mkwa kama mkama weka andika soma
+    Orodha Nambari Mbili Kamba kwa mkwa kama mkama weka andika soma
 
 then var while write
 
@@ -37,9 +37,11 @@ then var while write
 
 1.integer - rule:
 
-      noconst:=":)"no|":("no|no
-
-      no:=digit{no}
+      integer:=":)"unsigned_number|":("unsigned_number|unsigned_number
+      sign ::= "+" | "-"
+      unsigned_number ::= no_zero_digit {digit}
+      no_zero_digit ::= "1" | "2" |...| "9"
+      digit ::= "0" | "1" |...| "9"
 
 2.character
 
