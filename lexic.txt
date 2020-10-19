@@ -20,8 +20,6 @@ Lexic:
 
     Orodha Nambari Mbili Kamba kwa mkwa kama mkama weka andika soma
 
-then var while write
-
       b.identifiers
 
   -a sequence of letters and  digits, such that the first character is a letter; the rule is:
